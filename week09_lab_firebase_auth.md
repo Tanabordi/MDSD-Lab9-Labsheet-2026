@@ -533,10 +533,9 @@ Widget build(BuildContext context) {
 
 > ✅ **Checkpoint 4.1** ถ่ายภาพหน้าจอ 3 ภาพเรียงกัน คือ (ก) แอปตอนเพิ่งเปิดขึ้นมาครั้งแรกแบบยังไม่ล็อกอิน แสดงหน้า Login (ข) หลังล็อกอินสำเร็จ แอปสลับไปแสดง `MainScaffold` อัตโนมัติโดยไม่ต้องกดอะไรเพิ่ม และ (ค) หลังกด "ออกจากระบบ" แอปสลับกลับไปหน้า Login เอง อธิบายว่าทำไมการใช้ `StreamBuilder` ฟัง `authStateChanges()` จึงทำให้ไม่ต้องเขียนโค้ดสั่ง Navigate ไปมาเอง
 
+<img width="390" height="894" alt="Image" src="https://github.com/user-attachments/assets/828368fd-7b6d-4109-a69e-05453082a2a4" />
 
-```text
-บันทึกรูปผลลัพธ์ที่นี่ (3 ภาพ) และคำอธิบาย
-```
+> เพราะ StreamBuilder จะ Rebuild และสลับหน้าจอให้อัตโนมัติทุกครั้งที่ authStateChanges() ส่งสถานะใหม่มา (เป็น User แสดงหน้าหลัก / เป็น null แสดงหน้า Login) จึงไม่ต้องสั่ง Navigate เอง
 
 ---
 
