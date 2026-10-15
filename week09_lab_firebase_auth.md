@@ -1,4 +1,4 @@
-# ใบงานปฏิบัติสัปดาห์ที่ 9 Cloud Database — Firebase & Authentication
+ # ใบงานปฏิบัติสัปดาห์ที่ 9 Cloud Database — Firebase & Authentication
 
 **เครื่องมือ** Flutter, Firebase Console, FlutterFire CLI, Firebase Authentication, Cloud Firestore, Firebase Storage, google_sign_in
 
@@ -36,9 +36,8 @@
 
 > ✅ **Checkpoint 1.1** ถ่ายภาพหน้าจอ Firebase Console ที่แสดงหน้า Project Overview ของโปรเจกต์ที่สร้างเสร็จแล้ว
 
-```text
-บันทึกรูปผลลัพธ์ที่นี่
-```
+<img width="1600" height="860" alt="Picture (18)" src="https://github.com/user-attachments/assets/d3ca8eae-6842-4ec5-800a-ab763b273d52" />
+
 
 ### ขั้นตอนที่ 1.2: 🔧 ทำตามขั้นตอน — ติดตั้งเครื่องมือและเชื่อมโปรเจกต์ด้วย FlutterFire CLI
 
