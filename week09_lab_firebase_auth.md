@@ -163,10 +163,21 @@ Future<void> main() async {
 
 > ✅ **Checkpoint 2.1** ทดสอบสมัครสมาชิกด้วย Email ใหม่สำเร็จ ถ่ายภาพหน้าจอ Firebase Console เมนู Authentication → Users ที่แสดงบัญชีที่เพิ่งสมัคร จากนั้นทดสอบกรณีผิดพลาด 2 กรณี คือ (ก) สมัครซ้ำด้วย Email เดิม และ (ข) ใส่รหัสผ่านสั้นเกินไป ถ่ายภาพหน้าจอข้อความ Error ทั้งสองกรณี พร้อมอธิบายว่าโค้ดส่วนใดใน `auth_service.dart` เป็นตัวจัดการแต่ละกรณี
 
-```text
-บันทึกรูปผลลัพธ์ที่นี่ และคำอธิบายของแต่ละกรณี
-```
+- ภาพหน้าจอ Firebase Console แสดงบัญชีที่สมัครสำเร็จ
 
+<img width="1600" height="860" alt="Picture (19)" src="https://github.com/user-attachments/assets/c4794e0e-1284-4463-a2fe-c6f0ff645e7e" />
+
+- ภาพหน้าจอการทดสอบกรณีผิดพลาด (ก): สมัครซ้ำด้วย Email เดิม
+
+<img width="390" height="895" alt="4" src="https://github.com/user-attachments/assets/a0cd9fad-896e-499c-a6b4-ac92e98a8496" />
+
+> ในส่วนของโค้ดที่จัดการจะอยู่ที่ฟังก์ชัน _mapErrorMessage() ในไฟล์ lib/services/auth_service.dart ซึ่งทำหน้าที่ดักจับ Error Code 'email-already-in-use' จาก FirebaseAuthException แล้วส่งกลับเป็นข้อความภาษาไทยแจ้งเตือนผู้ใช้งาน
+
+- ภาพหน้าจอการทดสอบกรณีผิดพลาด (ข): ใส่รหัสผ่านสั้นเกินไป
+
+<img width="390" height="895" alt="5" src="https://github.com/user-attachments/assets/2291c952-ea87-4b27-b858-d0793af2d89d" />
+
+> ในส่วนของโค้ดที่จัดการจะอยู่ที่ฟังก์ชัน _mapErrorMessage() ในไฟล์ lib/services/auth_service.dart โดยจะคอยตรวจจับ Error Code 'weak-password' จาก FirebaseAuthException แล้วแปลงให้เป็นข้อความภาษาไทยเพื่อแจ้งเตือนผู้ใช้งานทันที
 ---
 
 ## ส่วนที่ 3: เข้าสู่ระบบด้วย Google Sign-In
