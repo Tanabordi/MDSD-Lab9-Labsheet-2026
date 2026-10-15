@@ -714,8 +714,12 @@ service cloud.firestore {
 
 > ✅ **Checkpoint 7.1 (Self-Study)** ถ่ายภาพหน้าจอผลการทดลองทั้ง 2 กรณีใน Rules Playground เขียนอธิบายสั้น ๆ ว่าทำไม Client-side Validation (การไม่แสดงปุ่มแก้ไขให้เห็น) เพียงอย่างเดียวจึงไม่เพียงพอต่อความปลอดภัยของข้อมูลจริง
 
+<img width="1600" height="860" alt="Picture (21)" src="https://github.com/user-attachments/assets/fac10dd1-1665-4141-b945-46e3f467af26" />
+
+<img width="1600" height="860" alt="Picture (22)" src="https://github.com/user-attachments/assets/cbdecf7e-ff3b-4f90-923d-0c5b22eddc17" />
+
 ```text
-บันทึกรูปผลลัพธ์ที่นี่ และคำอธิบาย
+การจำลองผ่าน Rules Playground แสดงผลว่าผู้ใช้ที่มี uid ตรงกับ sellerId จะได้รับอนุญาตให้แก้ไขเอกสารได้ในขณะที่ผู้ใช้คนอื่นจะถูกปฏิเสธทันทีตามเงื่อนไขความปลอดภัยที่ฝั่งเซิร์ฟเวอร์ 
 ```
 
 ---
